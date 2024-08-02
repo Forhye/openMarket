@@ -78,3 +78,34 @@ ESTsoft 부트캠프 개인 프로젝트 - 오픈마켓 구현
   - 판매자로 로그인
   - 상품 정보를 등록 및 수정
   - 판매자가 상품을 구매하는 것은 불가능
+ 
+
+### WBS
+gantt
+    title 오픈마켓 프론트엔드 구현 프로젝트
+    dateFormat  2024-08-02
+    axisFormat %d
+    todayMarker off
+
+    section 1. 프로젝트 준비
+    요구사항 분석           :a1, 2024-08-02, 1d
+
+    section 2. 기본 UI 구현
+    로그인/상품 목록페이지/장바구니페이지 :b1, after a1, 1d
+
+    section 3. 주요 기능 구현
+    로그인/상품 목록        :c1, after b1, 1d
+    장바구니                :c2, after c1, 1d
+
+    section 4. 부가 UI 구현
+    회원가입/상품 상세/주문/결제 :d1, after c2, 1d
+
+    section 5. 부가 기능 구현
+    회원가입                :e1, after d1, 1d
+    상품 상세               :e2, after e1, 1d
+    주문/결제               :e3, after e2, 1d
+
+    section 6. 마무리
+    기본 구현 기능 테스트   :f1, after c2, 1d
+    부가 구현 기능 테스트   :f2, after e3, 1d
+    버그 수정 및 최적화     :f3, after f2, 1d
