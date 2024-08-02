@@ -81,6 +81,7 @@ ESTsoft 부트캠프 개인 프로젝트 - 오픈마켓 구현
  
 
 ### WBS
+```mermaid
 gantt
     title 오픈마켓 프론트엔드 구현 프로젝트
     dateFormat  2024-08-02
@@ -109,3 +110,4 @@ gantt
     기본 구현 기능 테스트   :f1, after c2, 1d
     부가 구현 기능 테스트   :f2, after e3, 1d
     버그 수정 및 최적화     :f3, after f2, 1d
+```
