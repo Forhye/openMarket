@@ -102,3 +102,13 @@ form button {
 
   margin-top: 36px;
 }
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding-top: 30px;
+  margin-left: 14px;
+}
