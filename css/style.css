@@ -1,0 +1,21 @@
+@import url(./reset.css);
+
+:root {
+  --main-color: #21bf48;
+}
+
+body {
+  width: 100vw;
+  margin: auto;
+}
+
+.header--title {
+  width: 248px;
+  height: 76px;
+  background-image: url(../assets/Logo-hodu.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+  margin: auto;
+  padding-top: 100px;
+}
