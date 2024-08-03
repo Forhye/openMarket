@@ -141,3 +141,52 @@ span.article--slider__right {
   background-repeat: no-repeat;
   float: right;
 }
+
+section {
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: auto;
+  padding-top: 2px;
+}
+
+section a {
+  width: 380px;
+  height: 490px;
+
+  margin-top: 78px;
+}
+
+section a ul li:first-child {
+  width: 100%;
+  height: 380px;
+  background-color: coral;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+
+section a ul li:nth-child(2) {
+  color: #767676;
+  font-size: 16px;
+  padding-top: 1rem;
+}
+
+section a ul li:nth-child(3) {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+section a ul li:last-child {
+  font-size: 24px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+section a ul li:last-child span {
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  transform: translateY(5px);
+}
