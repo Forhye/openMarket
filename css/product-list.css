@@ -1,0 +1,97 @@
+@import url(../css/style.css);
+
+header {
+  height: 90px;
+  box-shadow: 0px 4px 5px 0px #0000001a;
+}
+
+div.header--wrap {
+  max-width: 1280px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+}
+
+.header--left {
+  max-width: 554px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--left > a {
+  width: 124px;
+  height: 38px;
+
+  background-image: url(../assets/Logo-hodu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header--left form {
+  color: #000;
+}
+.header--left form input {
+  width: calc(400px - 24px);
+  height: 46px;
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+  padding-left: 22px;
+  margin-left: 30px;
+}
+
+.header--left form input::placeholder {
+  font-size: 1rem;
+}
+
+.header--button__overview {
+  position: relative;
+  float: right;
+}
+
+button {
+  width: 28px;
+  height: 28px;
+  background-image: url(../assets/search.svg);
+  background-color: #fff;
+  border: none;
+
+  position: absolute;
+  right: 22px;
+  margin: 9px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+}
+
+header nav ul li {
+  font-size: 12px;
+  color: #767676;
+
+  width: fit-content;
+  height: 50px;
+  align-content: end;
+
+  padding: 20px 13px;
+  cursor: pointer;
+}
+
+header nav li:first-child {
+  background-image: url(../assets/icon-shopping-cart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 24px;
+}
+header nav li:last-child {
+  background-image: url(../assets/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 24px;
+}
