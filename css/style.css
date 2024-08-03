@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url(./font.css);
 
 :root {
   --main-color: #21bf48;
@@ -18,4 +19,49 @@ body {
 
   margin: auto;
   padding-top: 100px;
+}
+
+main {
+  padding-top: 70px;
+}
+
+main section {
+  width: 550px;
+
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  align-content: center;
+
+  width: 275px;
+  height: 80px;
+}
+
+/* 로그인 활성화 버튼 */
+.login--customer__abled,
+.login--sller__abled {
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 로그인 비활성화 버튼 */
+.login--customer__disabled,
+.login--seller__disabled {
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
