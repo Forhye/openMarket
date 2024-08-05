@@ -236,3 +236,24 @@ section.cart--priceCount ul li:last-child em {
 section.cart--priceCount ul li:last-child span {
   color: var(--point-color);
 }
+
+.cart__orderBtn {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+}
+
+.cart__orderBtn button {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+
+  width: 220px;
+  height: 68px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: var(--main-color);
+
+  margin: auto;
+}
