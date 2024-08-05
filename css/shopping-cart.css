@@ -168,3 +168,71 @@ section.cart--list ul.cart--list__product:first-child {
   position: absolute;
   top: 18px;
 }
+
+section.cart--priceCount {
+  height: 150px;
+
+  background-color: #f2f2f2;
+  border-radius: 10px;
+
+  margin-top: 90px;
+}
+
+section.cart--priceCount ul {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.cart--priceCount ul li {
+  text-align: center;
+}
+
+section.cart--priceCount ul em {
+  font-size: 24px;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+section.cart--priceCount ul span {
+  display: inline-block;
+}
+
+section.cart--priceCount ul li:nth-child(2) {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../assets/icon-minus-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.cart--priceCount ul li:nth-child(4) {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../assets/icon-plus-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.cart--priceCount ul li:last-child p {
+  font-weight: 800;
+}
+
+section.cart--priceCount ul li:last-child em {
+  color: var(--point-color);
+  font-size: 36px;
+  font-weight: 800;
+}
+
+section.cart--priceCount ul li:last-child span {
+  color: var(--point-color);
+}
