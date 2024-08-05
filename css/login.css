@@ -34,34 +34,43 @@ section > h3 {
   height: 70px;
 }
 
-/* 로그인 활성화 버튼 */
-.login--customer__abled,
-.login--seller__abled {
+.login--buyer {
   background-color: #fff;
   box-sizing: border-box;
   border: 1px solid #c4c4c4;
-  border-bottom: none;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
+}
+
+.login--seller {
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+/* 로그인 활성화 버튼 */
+.abled {
+  border-right: none;
+  border-bottom: none;
   z-index: 1;
 }
 
-.login--customer__abled {
-  border-right: none;
-}
-
-.login--seller__abled {
-  border-left: none;
-}
-
 /* 로그인 비활성화 버튼 */
-.login--customer__disabled,
-.login--seller__disabled {
+.disabled {
   box-sizing: border-box;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
   background-color: #f2f2f2;
   cursor: pointer;
+}
+
+.login--buyer .abled {
+  border-right: none;
+}
+
+.login--seller .disabled {
+  border-left: none;
 }
 
 form {

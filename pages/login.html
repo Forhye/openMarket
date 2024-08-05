@@ -21,15 +21,26 @@
       <h2 class="sr-only">login</h2>
 
       <section class="login--customer">
-        <h3 class="login--customer__abled">구매회원 로그인</h3>
-        <h3 class="login--seller__disabled">판매회원 로그인</h3>
+        <h3 class="login--buyer abled">구매회원 로그인</h3>
+        <h3 class="login--seller disabled">판매회원 로그인</h3>
         <form action="" method="get">
           <label for="user--id">
-            <input type="text" placeholder="아이디" name="user-id" />
+            <input
+              type="text"
+              id="user--id"
+              placeholder="아이디"
+              name="username"
+              autocomplete="off"
+            />
           </label>
 
           <label for="user--pw">
-            <input type="password" placeholder="비밀번호" name="user-pw" />
+            <input
+              type="password"
+              id="user--pw"
+              placeholder="비밀번호"
+              name="password"
+            />
           </label>
 
           <button type="submit">로그인</button>
