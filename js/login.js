@@ -1,16 +1,38 @@
-const $customerBtn = document.querySelector(".login--customer__abled");
-const $sellerBtn = document.querySelector(".login--seller__disabled");
+const $loginBtn = document.querySelector("button");
+const $inputId = document.querySelector("input#user--id");
+const $inputPw = document.querySelector("input#user--pw");
+const $buyerSelec = document.querySelector(".abled");
 
-$customerBtn.addEventListener("click", () => {
-  $sellerBtn.classList.remove("login--seller__abled");
-  $sellerBtn.classList.add("login--seller__disabled");
-  $customerBtn.classList.add("login--customer__abled");
-  $customerBtn.classList.remove("login--customer__disabled");
-});
+const username = $inputId.value;
+const password = $inputPw.value;
 
-$sellerBtn.addEventListener("click", () => {
-  $sellerBtn.classList.add("login--seller__abled");
-  $sellerBtn.classList.remove("login--seller__disabled");
-  $customerBtn.classList.remove("login--customer__abled");
-  $customerBtn.classList.add("login--customer__disabled");
+let typeSeach = (e) => {
+  if (e === "구매회원 로그인") {
+    longinType = "BUYER";
+  } else {
+    longinType = "SELLER";
+  }
+};
+typeSeach($buyerSelec.innerText);
+
+console.log(longinType);
+
+$loginBtn.addEventListener("click", () => {
+  const login = async function (username, password, longinType) {
+    try {
+      const req = await fetch("https://openmarket.weniv.co.kr/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          Username: username,
+          Password: password,
+          Login_type: longinType,
+        }),
+      });
+    } catch (erro) {
+      alert("로그인에 실패했습니다.");
+    }
+  };
 });
