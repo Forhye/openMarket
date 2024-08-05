@@ -31,12 +31,12 @@ section > h3 {
   align-content: center;
 
   width: 275px;
-  height: 80px;
+  height: 70px;
 }
 
 /* 로그인 활성화 버튼 */
 .login--customer__abled,
-.login--sller__abled {
+.login--seller__abled {
   background-color: #fff;
   box-sizing: border-box;
   border: 1px solid #c4c4c4;
@@ -44,6 +44,14 @@ section > h3 {
   border-radius: 10px 10px 0 0;
   cursor: pointer;
   z-index: 1;
+}
+
+.login--customer__abled {
+  border-right: none;
+}
+
+.login--seller__abled {
+  border-left: none;
 }
 
 /* 로그인 비활성화 버튼 */
@@ -68,7 +76,7 @@ form {
   justify-content: center;
   align-items: center;
 
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 form input {
