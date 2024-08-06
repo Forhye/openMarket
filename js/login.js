@@ -3,6 +3,8 @@ const $inputId = document.querySelector("input#user--id");
 const $inputPw = document.querySelector("input#user--pw");
 let loginType = "BUYER";
 const $p = document.querySelector(".login__failed");
+const $pId = document.querySelector(".login--id__failed");
+const $pPw = document.querySelector(".login--pw__failed");
 
 document.addEventListener("DOMContentLoaded", () => {
   const $selectedType = document.querySelectorAll(".login--type");
@@ -42,6 +44,22 @@ $loginBtn.addEventListener("click", async (e) => {
   const username = $inputId.value;
   const password = $inputPw.value;
 
+  if (username === "") {
+    e.preventDefault();
+    $pId.style.display = "block";
+    $pPw.style.display = "none";
+    $inputId.focus();
+    return;
+  }
+
+  if (password === "") {
+    e.preventDefault();
+    $pPw.style.display = "block";
+    $pId.style.display = "none";
+    $inputPw.focus();
+    return;
+  }
+
   try {
     res = await fetch("https://openmarket.weniv.co.kr/accounts/login/", {
       method: "POST",
@@ -54,13 +72,14 @@ $loginBtn.addEventListener("click", async (e) => {
         login_type: loginType,
       }),
     });
+
     if (res.ok) {
       // response 가 200 = res.status === 200
       window.location.href = "product-list.html";
     } else {
-      // todo
-      // 비밀번호 입력창에 focus이벤트가 발생하고 빈칸이 됩니다.
       $p.style.display = "block";
+      $pPw.style.display = "none";
+      $pId.style.display = "none";
 
       $inputPw.focus();
       $inputPw.value = null;

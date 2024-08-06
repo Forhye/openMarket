@@ -89,6 +89,30 @@ form p.login__failed {
   margin-bottom: -10px;
 }
 
+form p.login--id__failed {
+  display: none;
+  color: var(--point-color);
+  font-weight: 500;
+
+  align-self: start;
+
+  margin-left: 35px;
+  padding-top: 26px;
+  margin-bottom: -10px;
+}
+
+form p.login--pw__failed {
+  display: none;
+  color: var(--point-color);
+  font-weight: 500;
+
+  align-self: start;
+
+  margin-left: 35px;
+  padding-top: 26px;
+  margin-bottom: -10px;
+}
+
 form button {
   color: #fff;
   font-size: 18px;
