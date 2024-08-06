@@ -34,15 +34,7 @@ section > h3 {
   height: 70px;
 }
 
-.login--buyer {
-  background-color: #fff;
-  box-sizing: border-box;
-  border: 1px solid #c4c4c4;
-  border-radius: 10px 10px 0 0;
-  cursor: pointer;
-}
-
-/* 로그인 활성화 버튼 */
+/* 회원 타입 활성화 버튼 */
 .on {
   background-color: #fff;
   box-sizing: border-box;
@@ -53,7 +45,7 @@ section > h3 {
   z-index: 1;
 }
 
-/* 로그인 비활성화 버튼 */
+/* 회원 타입 비활성화 버튼 */
 .off {
   box-sizing: border-box;
   border: 1px solid #c4c4c4;
@@ -83,6 +75,18 @@ form input {
   height: 60px;
   border: none;
   border-bottom: 1px solid #c4c4c4;
+}
+
+form p.login__failed {
+  display: none;
+  color: var(--point-color);
+  font-weight: 500;
+
+  align-self: start;
+
+  margin-left: 35px;
+  padding-top: 26px;
+  margin-bottom: -10px;
 }
 
 form button {
