@@ -108,3 +108,57 @@ header nav li:last-child a {
   background-repeat: no-repeat;
   background-position: center top;
 }
+
+.header--mypage__modal {
+  max-width: 1280px;
+  margin: auto;
+
+  position: relative;
+  z-index: 1;
+  right: -20px;
+
+  display: flex;
+  justify-content: end;
+}
+
+.header--mypage__modal ul {
+  width: 120px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.header--mypage__modal ul::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  transform: translateX(33%) rotate(45deg) translateY(-53px);
+  box-shadow: -4px -3px 5px -5px rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  z-index: 1;
+  top: 26px;
+}
+
+.header--mypage__modal ul li {
+  color: #767676;
+  text-align: center;
+  padding: 10px 18px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.header--mypage__modal ul li:hover {
+  color: #000;
+  border: 1px solid #767676;
+  border-radius: 5px;
+}
