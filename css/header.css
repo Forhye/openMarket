@@ -161,4 +161,5 @@ header nav li:last-child a {
   color: #000;
   border: 1px solid #767676;
   border-radius: 5px;
+  cursor: pointer;
 }
