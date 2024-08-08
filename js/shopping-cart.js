@@ -1,6 +1,5 @@
 const $section = document.querySelector(".cart--list");
 
-// countUp과 countDown 함수들을 getData 함수 외부에 정의
 function countUp(event) {
   let countElem = event.target.previousElementSibling;
   let count = parseInt(countElem.textContent);
@@ -16,6 +15,15 @@ function countDown(event) {
     countElem.textContent = count;
   }
 }
+
+function sumPrice(count) {
+  let getPrice = document.querySelector(".cart--price").innerText;
+  numPrice = getPrice.replace(/[^0-9]/g, "");
+
+  return numPrice * count;
+}
+sumPrice(2);
+console.log(numPrice, sumPrice(2));
 
 async function getData() {
   try {
@@ -57,6 +65,7 @@ async function getData() {
 
       $ul.querySelector(".countUp").addEventListener("click", countUp);
       $ul.querySelector(".countDown").addEventListener("click", countDown);
+      sumPrice(count);
     });
   } catch (error) {
     alert(error);
