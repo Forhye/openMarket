@@ -117,7 +117,7 @@ header nav li:last-child a {
   z-index: 1;
   right: -20px;
 
-  display: flex;
+  display: none;
   justify-content: end;
 }
 

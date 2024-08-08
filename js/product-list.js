@@ -1,4 +1,12 @@
 const $section = document.querySelector("section");
+const $myPage = document.querySelector(".header--mypage");
+const $myPageModal = document.querySelector(".header--mypage__modal");
+
+$myPage.addEventListener("click", () => {
+  $myPage.style.backgroundImage = "url(../assets/icon-user-2.svg)";
+  $myPage.style.color = "#21bf48";
+  $myPageModal.style.display = "flex";
+});
 
 async function getData() {
   try {
