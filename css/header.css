@@ -103,7 +103,19 @@ header nav li a {
   background-position: center top;
 }
 
-header nav li:last-child a {
+header nav li a.header--login {
+  background-image: url(../assets/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+header nav li a.header--login:hover {
+  background-image: url(../assets/icon-user-2.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+header nav li a.header--mypage {
+  display: none;
   background-image: url(../assets/icon-user.svg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -115,7 +127,7 @@ header nav li:last-child a {
 
   position: relative;
   z-index: 1;
-  right: -20px;
+  right: -25px;
 
   display: none;
   justify-content: end;
