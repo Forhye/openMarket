@@ -14,7 +14,14 @@ async function getData() {
 
       $ul.innerHTML = `
         <li><input type="radio" name="check" id="cart--totalCehck"></li>
-        <li><img src="${item.image}"></li>
+        <li><img src="${item.image}">
+          <ul>
+            <li>${item.store_name}</li>
+            <li>${item.product_name}</li>
+            <li>${item.price}원</li>
+            <li>택배배송 / 무료배송</li>
+          </ul>
+        </li>
         <li>
             <button type="button"></button>
             <p>1</p><button type="button"></button>
@@ -26,15 +33,7 @@ async function getData() {
         <li><button type="button"></button></li>
       `;
 
-      $ul2.innerHTML = `
-      <li>${item.store_name}</li>
-      <li>${item.product_name}</li>
-      <li>${item.price}원</li>
-      <li>택배배송 / 무료배송</li>
-      `;
-
       $section.appendChild($ul);
-      $ul.appendChild($ul2);
     });
   } catch (error) {
     alert(error);
