@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>장바구니</title>
+    <title>상품 리스트</title>
 
     <!--css-->
-    <link rel="stylesheet" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" href="../css/product-list.css" />
   </head>
   <body>
     <header>
@@ -47,84 +47,36 @@
       </div>
     </header>
 
-    <main>
-      <h2>장바구니</h2>
-      <section class="cart--title">
+    <article>
+      <h2 class="sr-only">메인 배너</h2>
+      <ul>
+        <li><img src="#" alt="1번째 이미지" /></li>
+        <li><img src="#" alt="2번째 이미지" /></li>
+        <li><img src="#" alt="3번째 이미지" /></li>
+        <li><img src="#" alt="4번째 이미지" /></li>
+        <li><img src="#" alt="5번째 이미지" /></li>
+      </ul>
+
+      <p class="article--slider">
+        <span class="article--slider__left"></span>
+        <span class="article--slider__right"></span>
+      </p>
+    </article>
+
+    <section>
+      <h2 class="sr-only">상품 리스트</h2>
+      <!-- <a href="#" class="product--list">
         <ul>
+          <li><img src="" alt="노트북 파우치" /></li>
+          <li>우당탕탕 라이캣의 실험실</li>
+          <li>Hack Your Life 개발자 노트북 파우치</li>
           <li>
-            <label for="cart--totalCheck">
-              <input
-                type="radio"
-                name="cart--totalCheck"
-                id="cart--totalCheck"
-              />
-            </label>
-          </li>
-          <li>상품정보</li>
-          <li>수량</li>
-          <li>상품금액</li>
-        </ul>
-      </section>
-
-      <section class="cart--list">
-        <ul class="cart--list__product">
-          <li>
-            <input type="radio" name="cart--totalCheck" id="cart--totalCheck" />
-          </li>
-          <li>
-            <img src="#" alt="딥러닝 개발자 무릎 담요" />
-
-            <ul>
-              <li>백엔드글로벌</li>
-              <li>딥러닝 개발자 무릎 담요</li>
-              <li>17,500원</li>
-              <li>택배배송 / 무료배송</li>
-            </ul>
-          </li>
-          <li>
-            <button type="button" onclick="countDown();"></button>
-            <p class="cart__count"></p>
-            <button type="button" onclick="countUp();"></button>
-          </li>
-          <li>
-            <p class="cart--price">17,500원</p>
-            <button type="submit">주문하기</button>
-          </li>
-          <li><button type="button" class="delBtn"></button></li>
-        </ul>
-      </section>
-
-      <section class="cart--priceCount">
-        <ul>
-          <li>
-            <p>총 상품금액</p>
-            <em>46,500</em>
-            <span>원</span>
-          </li>
-          <li></li>
-          <li>
-            <p>상품 할인</p>
-            <em>0</em>
-            <span>원</span>
-          </li>
-          <li></li>
-          <li>
-            <p>배송비</p>
-            <em>0</em>
-            <span>원</span>
-          </li>
-          <li>
-            <p>결제 예정 금액</p>
-            <em>46,500</em>
+            29,000
             <span>원</span>
           </li>
         </ul>
-      </section>
-
-      <div class="cart__orderBtn">
-        <button type="submit">주문하기</button>
-      </div>
-    </main>
+      </a> -->
+    </section>
 
     <footer role="contentinfo">
       <nav>
@@ -164,6 +116,6 @@
         <p>대표 : 김호두</p>
       </address>
     </footer>
-    <script src="../js/shopping-cart.js"></script>
+    <script src="../js/product-list.js"></script>
   </body>
 </html>
