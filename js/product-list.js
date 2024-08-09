@@ -8,6 +8,10 @@ $myPage.addEventListener("click", () => {
   $myPageModal.style.display = "flex";
 });
 
+// document.addEventListener("click", () => {
+//   $myPageModal.style.display = "none";
+// });
+
 async function getData() {
   try {
     const res = await fetch("https://openmarket.weniv.co.kr/products/");

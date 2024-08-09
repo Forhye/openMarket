@@ -50,7 +50,7 @@ section.cart--title ul li:nth-child(3) {
   text-align: center;
 }
 section.cart--title ul li:last-child {
-  padding-right: 205px;
+  padding-right: 190px;
 }
 
 section.cart--list ul.cart--list__product {
@@ -68,6 +68,7 @@ section.cart--list ul.cart--list__product {
 
 .cart--list__product li:first-child {
   padding-left: 30px;
+  min-width: 70px;
 }
 .cart--list__product li:last-child {
   padding-right: 40px;
@@ -79,7 +80,7 @@ section.cart--list ul.cart--list__product:first-child {
 .cart--list__product li:nth-child(2) {
   display: flex;
   min-width: 400px;
-  margin-left: -80px;
+  margin-left: -115px;
 }
 
 .cart--list__product li:nth-child(2) img {
